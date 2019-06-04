@@ -17,6 +17,6 @@ async def on_member_remove(member):
 
 @client.command()
 async def cake(ctx):
-    await ctx.send(embed = discord.Embed().set_image(url = 'https://cdn0.iconfinder.com/data/icons/sweet-cake-1-1/512/10-512.png'))
+    await ctx.send(embed = discord.Embed().set_image(url = giphy('cake')))
 
 client.run('[token here]', bot = True)
