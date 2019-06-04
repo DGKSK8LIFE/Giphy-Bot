@@ -1,5 +1,6 @@
 import discord
 from discord.ext import commands
+from giphy import giphy
 
 client = commands.Bot(command_prefix = '!')
 
