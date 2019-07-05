@@ -10,11 +10,11 @@ async def on_ready():
 
 @client.event
 async def on_member_join(member):
-    print(f'Cakebot welcomes, {member}.')
+    await member.send("A new member has joined")
 
 @client.event
 async def on_member_remove(member):
-    print(f'Cakebot will miss you, {member}.')
+    await member.send("Goodbye! Cakebot will miss you!")
 
 @client.command
 async def help(ctx):
