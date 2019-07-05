@@ -4,15 +4,15 @@ from giphy import giphy
 
 client = commands.Bot(command_prefix = '!')
 
-@client.event()
+@client.event
 async def on_ready():
     print("Cakebot is ready to donate cakes.")
 
-@client.event()
+@client.event
 async def on_member_join(member):
     await member.send("A new member has joined")
 
-@client.event()
+@client.event
 async def on_member_remove(member):
     await member.send("Goodbye! Cakebot will miss you!")
 
