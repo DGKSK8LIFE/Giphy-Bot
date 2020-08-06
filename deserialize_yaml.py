@@ -1,9 +1,6 @@
 import yaml
 
-def deserialize():
+def deserialize(dict_key):
     with open('config.yaml') as file:
         key_list = yaml.load(file, Loader=yaml.FullLoader)
-        return {
-            'bot-token': key_list['bot-token'],
-            'giphy-key': key_list['giphy-key'] 
-        }
+        key_list['dict_key']
