@@ -2,6 +2,7 @@
 
 import time
 import giphy_client
+import pyyaml
 from giphy_client.rest import ApiException
 
 def giphy(tag, rating):
