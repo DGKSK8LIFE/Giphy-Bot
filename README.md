@@ -1,6 +1,6 @@
 # Giphy-Bot
 
-A bot that serves as an intermediary between discord users and Giphy; essentially a discord Giphy client.
+A bot that serves as an intermediary between Discord users and Giphy; essentially a Discord Giphy client.
 
 ## How to run the bot
 
