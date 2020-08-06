@@ -7,14 +7,14 @@ client = commands.Bot(command_prefix = '!')
 
 @client.event
 async def on_ready():
-    print("Cakebot is ready to donate cakes.")
+    print(f'Giphybot ready to assist!')
 
 @client.event
 async def on_member_join(member):
-    await member.send("A new member has joined")
+    await member.send(f'Giphybot welcomes {member.display_name}.')
 
 @client.event
 async def on_member_remove(member):
-    print("A member has left.")
+    print(f'Giphybot is sad to see {member.display_name} go.')
 
 client.run(deserialize('bot-token'))
