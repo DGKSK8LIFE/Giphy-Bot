@@ -12,5 +12,4 @@ bot-token: ''
 giphy-key
 ```
 
-3. Run `sudo docker build .`
-4. Run `sudo docker run .`
+3. Run `python3 bot.py`
