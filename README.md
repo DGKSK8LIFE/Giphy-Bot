@@ -1,6 +1,6 @@
-# Cakebot
+# Giphy-Bot
 
-A cake related discord bot that uses the giphy api to send cake gifs when commands are typed. (With three options for desired cake flavors' GIFs).
+A bot that serves as an intermediary between discord users and Giphy; essentially a discord Giphy client.
 
 ## How to run the bot
 
