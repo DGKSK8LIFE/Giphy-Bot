@@ -47,4 +47,4 @@ async def chocolate(ctx):
 async def strawberry(ctx):
     await ctx.send(embed = discord.Embed().set_image(url = giphy('strawberry cake')))
 
-client.run(deserialize()['bot-token']), bot = True))
+client.run(deserialize()['bot-token']), bot = True)
