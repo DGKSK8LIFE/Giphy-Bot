@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 from giphy import giphy
+from deserialize_yaml import deserialize
 
 client = commands.Bot(command_prefix = '!')
 
@@ -46,4 +47,4 @@ async def chocolate(ctx):
 async def strawberry(ctx):
     await ctx.send(embed = discord.Embed().set_image(url = giphy('strawberry cake')))
 
-client.run('[token]', bot = True)
+client.run(deserialize()['bot-token']), bot = True))
