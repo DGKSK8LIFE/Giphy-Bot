@@ -7,10 +7,8 @@ from giphy_client.rest import ApiException
 
 def giphy(tag, rating):
     api_instance = giphy_client.DefaultApi()
-    api_key = deserialize()['giphy-key']
-    fmt = 'json' 
     try: 
-        api_response = api_instance.gifs_random_get(api_key, tag=tag, rating=rating, fmt=fmt)
+        api_response = api_instance.gifs_random_get(deserialize('giphy-key'), tag=tag, rating=rating, fmt='json')
         return api_response.data.image_url
     except ApiException as e:
         print("Exception when calling DefaultApi->gifs_search_get: %s\n" % e)
