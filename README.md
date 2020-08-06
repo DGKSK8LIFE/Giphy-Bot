@@ -13,3 +13,7 @@ giphy-key: ''
 ```
 
 3. Run `python3 bot.py`
+
+## Available commands
+
+`!gif <rating>` *generates a random gif with a user's desired rating*
