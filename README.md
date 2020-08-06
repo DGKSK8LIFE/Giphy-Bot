@@ -9,7 +9,7 @@ A bot that serves as an intermediary between discord users and Giphy; essentiall
 
 ```
 bot-token: ''
-giphy-key
+giphy-key: ''
 ```
 
 3. Run `python3 bot.py`
