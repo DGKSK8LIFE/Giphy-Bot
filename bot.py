@@ -22,7 +22,10 @@ async def on_member_remove(member):
 
 
 @client.command()
-async def gif(ctx, tag, rating):
-    await ctx.send(giphy(tag, rating))
+async def gif(ctx, rating):
+    if rating == 'g' or rating == 'pg' or rating == 'r':
+        await ctx.send(giphy(rating))
+    else:
+        await ctx.send('Please input a valid rating')
 
 client.run(deserialize('bot-token'))
