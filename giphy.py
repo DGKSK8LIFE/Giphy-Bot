@@ -4,11 +4,10 @@ import time
 import giphy_client
 from giphy_client.rest import ApiException
 
-def giphy(tag):
+def giphy(tag, rating):
     api_instance = giphy_client.DefaultApi()
     api_key = open(".giphy-api-key.txt", "r").read().rstrip()
     fmt = 'json' 
-    rating = 'g' 
     try: 
         api_response = api_instance.gifs_random_get(api_key, tag=tag, rating=rating, fmt=fmt)
         return api_response.data.image_url
