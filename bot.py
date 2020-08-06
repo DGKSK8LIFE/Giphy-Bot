@@ -17,4 +17,8 @@ async def on_member_join(member):
 async def on_member_remove(member):
     print(f'Giphybot is sad to see {member.display_name} go.')
 
+@client.command 
+def display_gif(ctx, tag, rating):
+    await ctx.send(giphy(tag, rating))
+
 client.run(deserialize('bot-token'))
