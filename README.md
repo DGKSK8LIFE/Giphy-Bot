@@ -9,6 +9,7 @@ A cake related discord bot that uses the giphy api to send cake gifs when comman
 
 ```
 bot-token: ''
+giphy-key
 ```
 
 3. Run `sudo docker build .`
