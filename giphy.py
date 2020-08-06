@@ -1,5 +1,4 @@
 #!/usr/bin/python
-
 import time
 import giphy_client
 from deserialize_yaml import deserialize
@@ -11,7 +10,7 @@ def giphy(tag, rating):
         api_response = api_instance.gifs_random_get(deserialize('giphy-key'), tag=tag, rating=rating, fmt='json')
         return api_response.data.image_url
     except ApiException as e:
-        print("Exception when calling DefaultApi->gifs_search_get: %s\n" % e)
+        print(f'Exception when calling DefaultApi->gifs_search_get: {e}')
 
 if __name__ == "__main__":
     print(giphy("Hello, World!", 'g'))
