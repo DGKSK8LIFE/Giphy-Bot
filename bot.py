@@ -23,7 +23,7 @@ async def on_member_remove(member):
 
 @client.command()
 async def gif(ctx, rating):
-    if rating == 'g' or rating == 'pg' or rating == 'r':
+    if rating.lower() in ['g', 'pg', 'r']:
         await ctx.send(giphy(rating))
     else:
         await ctx.send('Please input a valid rating')
